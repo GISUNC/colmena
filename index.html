@@ -13,15 +13,8 @@
     crossorigin=""></script>
     <script src="./js/geolet.js"></script><!-- include geolet.js after leaflet.js -->
 </head>
-<style>
-    #map { 
-        height: 100%; 
-    width: 100%;
-    position: absolute;
-    }
-</style>
 <body>
-    <div id="map"></div>
+    <div id="map" style="position:absolute;top:0;right:0;bottom:0;left:0"></div>
     <script>
         var map = L.map('map').setView([18.115469, -65.4452709], 20);
         L.tileLayer('https://cartocollective.blob.core.windows.net/vieques/agricultura/colmena/2022/{z}/{x}/{y}.png', {
