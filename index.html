@@ -16,7 +16,12 @@
 <body>
     <div id="map" style="position:absolute;top:0;right:0;bottom:0;left:0"></div>
     <script>
-        var map = L.map('map').setView([18.115469, -65.4452709], 20);
+        var map = L.map('map').setView([18.115453246947073, -65.4462929069996], 20);
+        var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map)
+
         L.tileLayer('https://cartocollective.blob.core.windows.net/vieques/agricultura/colmena/2022/marzo/{z}/{x}/{y}.png', {
     attribution: 'Carolina Cartography Collective',
     maxZoom: 22,
